@@ -1,0 +1,5 @@
+
+used the compile line
+cc -Wall -Wextra -Wpedantic -Werror -std=c99 hello.c -o myhello
+
+this line helped compile the c file where the hello world program was written
