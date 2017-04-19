@@ -1,0 +1,22 @@
+CC = gcc
+CFLAGS = -Wall -Wextra -Wpedantic -Werror -std=c99
+
+.PHONY: all 
+all: cat.o hello.o 
+	 $(CC) $(CFLAGS) cat.o -o cat
+	 $(CC) $(CFLAGS) hello.o -o hello
+cat:cat.o
+	$(CC) $(CFLAGS) cat.o -o cat
+
+hello:hello.o
+	$(CC) $(CFLAGS) hello.o -o hello
+		
+cat.o: cat.c
+	$(CC) $(CFLAGS) -c cat.c
+	
+hello.o: hello.c
+	$(CC) $(CFLAGS) -c hello.c
+
+.PHONY: clean 
+clean:
+	rm cat hello cat.o hello.o

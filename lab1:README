@@ -1,0 +1,16 @@
+This assignment has two programs hello.c and cat.c . Hello.c prints Hello World! on the screen.
+Program cat.c reads file content and prints on the screen. It can accept multiple file names from command prompt
+and prints their contents in same order in which file names were given
+
+How to compile programs
+
+To compile hello.c use
+ make hello
+
+To compile cat.c use
+ make cat
+ 
+To compile hello and cat together use
+
+make all
+
